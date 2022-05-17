@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Pro-WEB02" />
         <module name="Pro-WEB01" />
+        <module name="Pro0WEB03" />
       </profile>
     </annotationProcessing>
   </component>

@@ -99,6 +99,53 @@ req.setCharacterEncoding("UTF-8");
     2. 响应头: 包含了服务器信息，服务器发送给浏览器的信息(内容的媒体类型，编码，长度等)
     3. 响应体: 响应的实际内容
 
+## 会话
+* Http是无状态的
+* 服务器无法判断这两次请求是同一个客户端发过来的，还是不同客户端发过来的
+    - 带来的问题
+        * 例如第一次请求是添加商品
+        * 第二次请求是结账
+        * 如果这两次请求服务器无法区分是同一个用户，那么会导致混乱
+    - 通过会话跟踪技术来解决无状态的问题
+        ```text
+        S:请告诉我你的会话id
+        C:没有
+        S:偶，那我知道了，你是第一次请求，我给你一个session id:123
+        
+        S:请告诉我你的会话id
+        C:123
+        S:我知道了，你是***，上次什么时间访问我的
+        ```
+* 会话跟踪技术
+    - 客户端第一次发请求给服务器，服务器获取session，获取不到，则创建新的，然后响应给客户端
+    - 下次客户端给服务器发请求时会把sessionID带给服务器
+    - 那么服务器就能获取到了，那么服务器就判断这一给请求和和某次请求时同一个服务端，从而能够区分开客户端
+    - 常用的API
+        - request.getSession(),获取会话，没有就创建新的
+        - request.getSession(true)和上面一样
+        - request.getSession(false),没有不会创建新的
+        - session.getId(),获取session的id
+        - session.isNew(),判断当前session是否是新的
+        - session.getMaxInactiveInterval(),session的非激活间隔时常，默认1800s
+        - session.getMaxInactiveInterval(),设置这个非激活间隔时常
+        - session.invalidate(),强制让会话失效
+        - session.getCreateTime(),会话创建时间
+* session保存作用域
+    - session.setAttribute(key, value):向当前的session保存作用域保存一个数据,键值对形式
+    - session.getAttribute(key):从当前session保存作用域里的指定key获取数据
+    - session.removeAttribute(key)
+    - session保存作用域适合某个具体的session对应的
+    
+
+## 服务器内部转发以及客户端重定向
+1. 服务器内部转发: request.getRequestDispatcher("...").forward(request, response);
+    - 一次请求响应，对于客户端而言，内部经过多少次转发，客户端时不知道的
+2. 客户端重定向: response.sendRedirect("...");
+    - 两次请求响应的过程，客户端肯定知道url的变化
+    
+
+## Thymeleaf视图模板技术
+
 
 
 
