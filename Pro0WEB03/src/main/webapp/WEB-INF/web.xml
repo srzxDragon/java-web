@@ -11,4 +11,14 @@
         <servlet-name>Demo01Servlet</servlet-name>
         <url-pattern>/demo01</url-pattern>
     </servlet-mapping>
+
+    <!-- 在上下文参数中配置视图前缀和视图后缀 -->
+    <context-param>
+        <param-name>view-prefix</param-name>
+        <param-value>/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
 </web-app>

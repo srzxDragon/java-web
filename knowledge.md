@@ -145,6 +145,13 @@ req.setCharacterEncoding("UTF-8");
     
 
 ## Thymeleaf视图模板技术
+1. 添加thymeleaf的依赖
+2. 新建一个Servlet类ViewBaseServlet
+3. 在web.xml文件中添加配置
+4. 使得我们的Servlet继承ViewBaseServlet
+5. 根据逻辑视图名称 得到 物理视图名称
+6. 使用thymeleaf的标签
+    th:if, th:unless, th:each, th:text
 
 
 
