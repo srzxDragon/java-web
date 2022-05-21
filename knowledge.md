@@ -148,11 +148,18 @@ req.setCharacterEncoding("UTF-8");
 1. 添加thymeleaf的依赖
 2. 新建一个Servlet类ViewBaseServlet
 3. 在web.xml文件中添加配置
+    <context-param>:view-prefix, view-suffix
 4. 使得我们的Servlet继承ViewBaseServlet
 5. 根据逻辑视图名称 得到 物理视图名称
 6. 使用thymeleaf的标签
     th:if, th:unless, th:each, th:text
+    
 
+## 保存作用域
+1. page, 页面级别
+2. request, 请求级别, 一次请求响应范围
+3. session, 一次会话范围有效
+4. application, 一次应用程序范围有效, 所有的客户端请求都能得到
 
 
 

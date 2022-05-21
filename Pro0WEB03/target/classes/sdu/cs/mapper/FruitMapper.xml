@@ -7,4 +7,10 @@
     <select id="getFruitList" resultType="Fruit">
         select * from t_fruit;
     </select>
+
+<!--    Fruit getFruitById(@Param("fid") Integer fid);-->
+    <select id="getFruitById" resultType="Fruit">
+        select * from t_fruit where fid = #{fid};
+    </select>
+
 </mapper>

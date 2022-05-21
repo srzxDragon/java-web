@@ -7,13 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-// 演示request保存作用域
-@WebServlet("/demo01")
-public class Demo01Servlet extends HttpServlet {
+
+@WebServlet("/demo02")
+public class Demo02Servlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("uname", "Jack");
-//        response.sendRedirect("demo02");
-        request.getRequestDispatcher("demo02").forward(request, response);
+        Object uname = request.getAttribute("uname");
+        System.out.println(uname);
     }
 }

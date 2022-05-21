@@ -16,4 +16,13 @@ public class FruitMapperTest {
         List<Fruit> fruitList = mapper.getFruitList();
         fruitList.forEach(System.out::println);
     }
+
+
+    @Test
+    public void testGetFruitById() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
+        Fruit fruitById = mapper.getFruitById(1);
+        System.out.println(fruitById);
+    }
 }

@@ -18,7 +18,8 @@
 						<td colspan="4">对不起，库存为空</td>
 					</tr>
 					<tr th:unless="${#lists.isEmpty(session.fruitList)}" th:each="fruit : ${session.fruitList}">
-						<td th:text="${fruit.getFname()}">苹果</td>
+						<!-- <td><a th:text="${fruit.getFname()}" th:href="@{'/edit.do?fid='+${fruit.getFid()}}">苹果</a></td> -->
+						<td><a th:text="${fruit.getFname()}" th:href="@{/edit.do(fid=${fruit.getFid()})}">苹果</a></td>
 						<td th:text="${fruit.getPrice()}">5</td>
 						<td th:text="${fruit.getFcount()}">20</td>
 						<td><img src="imgs/del.jpg" class="delImg"/></td>
