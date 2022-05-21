@@ -25,4 +25,28 @@ public class FruitMapperTest {
         Fruit fruitById = mapper.getFruitById(1);
         System.out.println(fruitById);
     }
+
+    @Test
+    public void testUpdateFruitById() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
+        mapper.updateFruitById(new Fruit(33, "Apple", 230, 100, "good"));
+    }
+
+
+    @Test
+    public void testInsertFruit() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
+        Fruit fruit = new Fruit(null, "Apple", 230, 100, "good");
+
+        mapper.insertFruit(fruit);
+    }
+
+    @Test
+    public void testDeleteById() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
+        mapper.deleteFruitById(34);
+    }
 }

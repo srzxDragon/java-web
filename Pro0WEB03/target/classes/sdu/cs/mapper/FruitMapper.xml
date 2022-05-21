@@ -13,4 +13,19 @@
         select * from t_fruit where fid = #{fid};
     </select>
 
+<!--    int updateFruitById(@Param("fid") Integer fid);-->
+    <update id="updateFruitById">
+        update t_fruit set fname=#{fname}, price=#{price}, fcount=#{fcount}, remark=#{remark} where fid=#{fid};
+    </update>
+
+
+<!--    int insertFruit(Fruit fruit);-->
+    <insert id="insertFruit">
+        insert into t_fruit values(null, #{fname}, #{price}, #{fcount}, #{remark});
+    </insert>
+
+<!--    int deleteFruitById(@Param("fid") Integer fid);-->
+    <delete id="deleteFruitById">
+        delete from t_fruit where fid = #{fid};
+    </delete>
 </mapper>

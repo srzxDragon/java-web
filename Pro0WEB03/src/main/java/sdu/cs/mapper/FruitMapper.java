@@ -12,4 +12,11 @@ public interface FruitMapper {
     List<Fruit> getFruitList();
 
     Fruit getFruitById(@Param("fid") Integer fid);
+
+
+    int updateFruitById(Fruit fruit);
+
+    int insertFruit(Fruit fruit);
+
+    int deleteFruitById(@Param("fid") Integer fid);
 }
