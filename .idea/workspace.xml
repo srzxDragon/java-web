@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Pro0WEB03:war exploded" />
+      <artifact name="Pro0WEB04:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d36e980-a5c7-49aa-a78f-773a4764d35e" name="Default Changelist" comment="" />
+    <list default="true" id="1d36e980-a5c7-49aa-a78f-773a4764d35e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pro0WEB04/Pro0WEB04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA-WEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA-WEB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro-WEB01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pro-WEB01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro-WEB01/target/classes/META-INF/Pro-WEB01.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/src/main/java/sdu/cs/servlets/UpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/src/main/java/sdu/cs/servlets/UpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/WEB-INF/classes/sdu/cs/mapper/FruitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/WEB-INF/classes/sdu/cs/mapper/FruitMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pro0WEB03/target/Pro0WEB03-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knowledge.md" beforeDir="false" afterPath="$PROJECT_DIR$/knowledge.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,29 +81,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pro0WEB03/src/main/webapp/css" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15219338" />
-    <property name="project.structure.side.proportion" value="0.26215646" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="project.structure.side.proportion" value="0.28224102" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JAVA\JAVA-WEB" />
+      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp" />
+      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp\css" />
+      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp\WEB-INF" />
+      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp\imgs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sdu.cs.servlets" />
       <recent name="sdu.cs.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp\css" />
-      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp\imgs" />
-      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\webapp" />
-      <recent name="D:\JAVA\JAVA-WEB\Pro0WEB03\src\main\resources" />
-      <recent name="D:\JAVA\JAVA-WEB\Pro-WEB02\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\JAVA-WEB" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FruitMapperTest.testDeleteById">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.78">
     <configuration name="FruitMapperTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pro0WEB03" />
       <extension name="coverage">
@@ -104,22 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitMapperTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Pro0WEB03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sdu.cs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sdu.cs" />
-      <option name="MAIN_CLASS_NAME" value="sdu.cs.FruitMapperTest" />
-      <option name="METHOD_NAME" value="testGetAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FruitMapperTest.testGetFruitById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pro0WEB03" />
       <extension name="coverage">
@@ -131,6 +131,22 @@
       <option name="PACKAGE_NAME" value="sdu.cs" />
       <option name="MAIN_CLASS_NAME" value="sdu.cs.FruitMapperTest" />
       <option name="METHOD_NAME" value="testGetFruitById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitMapperTest.testInsertFruit (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pro0WEB04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sdu.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sdu.cs" />
+      <option name="MAIN_CLASS_NAME" value="sdu.cs.FruitMapperTest" />
+      <option name="METHOD_NAME" value="testInsertFruit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,14 +185,14 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web03/index" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web04/index" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="Pro0WEB03:war exploded">
+        <artifact name="Pro0WEB04:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/web03" />
+            <option name="CONTEXT_PATH" value="/web04" />
           </settings>
         </artifact>
       </deployment>
@@ -239,25 +255,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Pro0WEB03:war exploded" />
+          <artifact name="Pro0WEB04:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FruitMapperTest.testGetAll" />
       <item itemvalue="JUnit.FruitMapperTest.testGetFruitById" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
       <item itemvalue="JUnit.FruitMapperTest.testUpdateFruitById" />
       <item itemvalue="JUnit.FruitMapperTest.testInsertFruit" />
       <item itemvalue="JUnit.FruitMapperTest.testDeleteById" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
+      <item itemvalue="JUnit.FruitMapperTest.testInsertFruit (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FruitMapperTest.testInsertFruit (1)" />
         <item itemvalue="JUnit.FruitMapperTest.testDeleteById" />
         <item itemvalue="JUnit.FruitMapperTest.testInsertFruit" />
         <item itemvalue="JUnit.FruitMapperTest.testUpdateFruitById" />
         <item itemvalue="JUnit.FruitMapperTest.testGetFruitById" />
-        <item itemvalue="JUnit.FruitMapperTest.testGetAll" />
       </list>
     </recent_temporary>
   </component>
@@ -301,6 +317,10 @@
       <workItem from="1652873943811" duration="7574000" />
       <workItem from="1653095424115" duration="6550000" />
       <workItem from="1653110737348" duration="2775000" />
+      <workItem from="1653152943981" duration="5655000" />
+      <workItem from="1653199542303" duration="2876000" />
+      <workItem from="1653202433071" duration="32000" />
+      <workItem from="1653202490180" duration="949000" />
     </task>
     <servers />
   </component>
@@ -318,22 +338,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="4" key="#Project_Structure" timestamp="1653201530827">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="4" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1653201530827" />
     <state x="328" y="3" key="#Web_Browsers" timestamp="1652787593664">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="328" y="3" key="#Web_Browsers/0.0.1280.689@0.0.1280.689" timestamp="1652787593664" />
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653101299779">
+    <state x="45" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653203060536">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1653101299779" />
+    <state x="45" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1653203060536" />
     <state x="446" y="58" width="633" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1652877150486">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="446" y="58" width="633" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1652877150486" />
-    <state x="453" y="269" width="611" height="184" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1652795341778">
+    <state x="453" y="269" width="611" height="184" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1653202361006">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="453" y="269" width="611" height="184" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1280.689@0.0.1280.689" timestamp="1652795341778" />
+    <state x="453" y="269" width="611" height="184" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1280.689@0.0.1280.689" timestamp="1653202361006" />
     <state x="714" y="306" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1652795406117">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -342,82 +366,82 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1652615983843" />
-    <state x="417" y="100" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1652795566329">
+    <state x="417" y="100" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1653203112817">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="417" y="100" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.689@0.0.1280.689" timestamp="1652795566329" />
+    <state x="417" y="100" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.689@0.0.1280.689" timestamp="1653203112817" />
     <state x="5" y="107" width="1095" height="504" key="DiffContextDialog" timestamp="1652787762330">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="5" y="107" width="1095" height="504" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1652787762330" />
-    <state x="467" y="100" key="FileChooserDialogImpl" timestamp="1652704660302">
+    <state x="467" y="84" key="FileChooserDialogImpl" timestamp="1653202278310">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="467" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1652704660302" />
-    <state width="1239" height="208" key="GridCell.Tab.0.bottom" timestamp="1653113519132">
+    <state x="467" y="84" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1653202278310" />
+    <state width="1023" height="234" key="GridCell.Tab.0.bottom" timestamp="1653203476115">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.0.center" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653203476115" />
+    <state width="1023" height="234" key="GridCell.Tab.0.center" timestamp="1653203476114">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.0.left" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1653203476114" />
+    <state width="1023" height="234" key="GridCell.Tab.0.left" timestamp="1653203476114">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.0.right" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1653203476114" />
+    <state width="1023" height="234" key="GridCell.Tab.0.right" timestamp="1653203476114">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.1.bottom" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1653203476114" />
+    <state width="1023" height="234" key="GridCell.Tab.1.bottom" timestamp="1653203476117">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.1.center" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653203476117" />
+    <state width="1023" height="234" key="GridCell.Tab.1.center" timestamp="1653203476115">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.1.left" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1653203476115" />
+    <state width="1023" height="234" key="GridCell.Tab.1.left" timestamp="1653203476115">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1239" height="208" key="GridCell.Tab.1.right" timestamp="1653113519132">
+    <state width="1023" height="234" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1653203476115" />
+    <state width="1023" height="234" key="GridCell.Tab.1.right" timestamp="1653203476116">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1239" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1653113519132" />
-    <state width="1023" height="98" key="GridCell.Tab.2.bottom" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1653203476116" />
+    <state width="1023" height="234" key="GridCell.Tab.2.bottom" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.2.center" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.2.center" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.2.left" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.2.left" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.2.right" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.2.right" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.3.bottom" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.3.bottom" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.3.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.3.center" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.3.bottom/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.3.center" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.3.center/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.3.left" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.3.center/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.3.left" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.3.left/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
-    <state width="1023" height="98" key="GridCell.Tab.3.right" timestamp="1653113519119">
+    <state width="1023" height="234" key="GridCell.Tab.3.left/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
+    <state width="1023" height="234" key="GridCell.Tab.3.right" timestamp="1653203475676">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1023" height="98" key="GridCell.Tab.3.right/0.0.1280.689@0.0.1280.689" timestamp="1653113519119" />
+    <state width="1023" height="234" key="GridCell.Tab.3.right/0.0.1280.689@0.0.1280.689" timestamp="1653203475676" />
     <state width="918" height="329" key="GridCell.Tab.4.bottom" timestamp="1652787503525">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -450,14 +474,14 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="918" height="329" key="GridCell.Tab.5.right/0.0.1280.689@0.0.1280.689" timestamp="1652787506744" />
-    <state x="53" y="0" width="1131" height="689" key="SettingsEditor" timestamp="1652795640233">
+    <state x="36" y="0" width="1131" height="689" key="SettingsEditor" timestamp="1653203259590">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="53" y="0" width="1131" height="689" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1652795640233" />
-    <state x="305" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1653110775727">
+    <state x="36" y="0" width="1131" height="689" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1653203259590" />
+    <state x="305" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1653202513688">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="305" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1653110775727" />
+    <state x="305" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1653202513688" />
     <state x="93" y="93" width="1095" height="504" key="dock-window-1" timestamp="1653099858225">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

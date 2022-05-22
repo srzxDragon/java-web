@@ -11,7 +11,4 @@
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
-
-
-
 </web-app>

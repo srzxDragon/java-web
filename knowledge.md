@@ -163,6 +163,31 @@ req.setCharacterEncoding("UTF-8");
 
 
 
+## Http的访问
+- Http://localhost:8080/web01/add 
+    * 访问web01下注册为add的servlet
+    * 在web.xml中注册为<url-pattern>/add</url-pattern>
+    * 或者是@WebServlet("/add)中
+- Http://localhost:8080/web01/add.html
+    * 访问web01下的add.html页面
+- form action="add" method="post"
+    * form表单, 点击submit按钮后访问注册为add的组件
+    * 访问方式为post
+    * 没写method则访问方式为get
+- th:href="@{/edit.do(fid=${fruit.getFid()})}"
+    * 使用thymeleaf视图模板技术渲染
+    * 相当于访问Http://localhost:8080/web01/edit.do?fid=1 (fruit.getFid() = 1)
+    * 即访问web01下注册为/edit.do的servlet
+    * 可以使用request.getParameter("fid")获得fid的值
+- super.processTemplate("edit", request, response);
+    * 会访问/edit.html页面
+- form th:action="@{/update.do}" method="post"
+    * 会访问注册为/update.do的servlet
+    * 访问方式为post
+- response.sendRedirect("index");
+    * 客户端重定向，让浏览器访问注册为index的servlet
+
+
 ## 错误
 - 500 服务器内部错误
 - 404 找不到资源
