@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sdu.cs.mapper.FruitMapper">
+<!--    List<Fruit> getFruitList();-->
+    <select id="getFruitList" resultType="Fruit">
+        select * from t_fruit limit #{pageNo}, 5;
+    </select>
+
+<!--    Fruit getFruitById(@Param("fid") Integer fid);-->
+    <select id="getFruitById" resultType="Fruit">
+        select * from t_fruit where fid = #{fid};
+    </select>
+
+<!--    int updateFruitById(@Param("fid") Integer fid);-->
+    <update id="updateFruitById">
+        update t_fruit set fname=#{fname}, price=#{price}, fcount=#{fcount}, remark=#{remark} where fid=#{fid};
+    </update>
+
+
+<!--    int insertFruit(Fruit fruit);-->
+    <insert id="insertFruit">
+        insert into t_fruit values(null, #{fname}, #{price}, #{fcount}, #{remark});
+    </insert>
+
+<!--    int deleteFruitById(@Param("fid") Integer fid);-->
+    <delete id="deleteFruitById">
+        delete from t_fruit where fid = #{fid};
+    </delete>
+
+<!--    int getFruitCount();-->
+    <select id="getFruitCount" resultType="java.lang.Integer">
+        select count(*) from t_fruit;
+    </select>
+</mapper>
