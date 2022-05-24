@@ -7,9 +7,11 @@ import java.util.List;
 
 public interface FruitMapper {
     /**
-     * 获取所有的库存列表信息
+     * 获取指定页码库存列表信息, 每页显示5条记录
+     * 第pageNo页
+     * select * from t_fruit limit 5 * (pageNo - 1), 5
      */
-    List<Fruit> getFruitList();
+    List<Fruit> getFruitList(@Param("pageNo") Integer pageNo);
 
     Fruit getFruitById(@Param("fid") Integer fid);
 
@@ -19,4 +21,8 @@ public interface FruitMapper {
     int insertFruit(Fruit fruit);
 
     int deleteFruitById(@Param("fid") Integer fid);
+
+
+    //擦汗寻库存总记录条数
+    int getFruitCount();
 }

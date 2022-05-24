@@ -19,14 +19,30 @@ import java.util.List;
 public class IndexServlet extends ViewBaseServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Integer pageNo = 1;
+
+        String pageNoStr = request.getParameter("pageNo");
+        if (pageNoStr != null && !"".equals(pageNoStr)) {
+            System.out.println(pageNoStr);
+            pageNo = Integer.parseInt(pageNoStr);
+        }
+
+        HttpSession session = request.getSession();
+        session.setAttribute("pageNo", pageNo);
+
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
-        List<Fruit> fruitList = mapper.getFruitList();
+        List<Fruit> fruitList = mapper.getFruitList(5 * (pageNo - 1));
+
+        int fruitCount = mapper.getFruitCount();
+        int totalPages = (fruitCount + 5 - 1) / 5;
+
+        session.setAttribute("pageCount", totalPages);
 
 
         //保存到session作用域
-        HttpSession session = request.getSession();
         session.setAttribute("fruitList", fruitList);
+
 
         /**
          * 此处视图名称时index

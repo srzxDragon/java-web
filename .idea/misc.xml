@@ -6,12 +6,23 @@
     <file type="web" url="file://$PROJECT_DIR$/Pro-WEB02" />
     <file type="web" url="file://$PROJECT_DIR$/Pro0WEB03" />
     <file type="web" url="file://$PROJECT_DIR$/Pro0WEB04" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB05" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB06" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB07" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB08" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB09" />
+    <file type="web" url="file://$PROJECT_DIR$/Pro0WEB10" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Pro0WEB08/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

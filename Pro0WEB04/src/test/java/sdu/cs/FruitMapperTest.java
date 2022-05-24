@@ -13,7 +13,7 @@ public class FruitMapperTest {
     public void testGetAll() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
-        List<Fruit> fruitList = mapper.getFruitList();
+        List<Fruit> fruitList = mapper.getFruitList(0);
         fruitList.forEach(System.out::println);
     }
 
@@ -50,5 +50,14 @@ public class FruitMapperTest {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
         mapper.deleteFruitById(34);
+    }
+
+
+    @Test
+    public void testCountAll() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        FruitMapper mapper = sqlSession.getMapper(FruitMapper.class);
+        int fruitCount = mapper.getFruitCount();
+        System.out.println(fruitCount);
     }
 }

@@ -5,7 +5,7 @@
 <mapper namespace="sdu.cs.mapper.FruitMapper">
 <!--    List<Fruit> getFruitList();-->
     <select id="getFruitList" resultType="Fruit">
-        select * from t_fruit;
+        select * from t_fruit limit #{pageNo}, 5;
     </select>
 
 <!--    Fruit getFruitById(@Param("fid") Integer fid);-->
@@ -28,4 +28,9 @@
     <delete id="deleteFruitById">
         delete from t_fruit where fid = #{fid};
     </delete>
+
+<!--    int getFruitCount();-->
+    <select id="getFruitCount" resultType="java.lang.Integer">
+        select count(*) from t_fruit;
+    </select>
 </mapper>

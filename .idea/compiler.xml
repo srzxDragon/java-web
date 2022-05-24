@@ -6,14 +6,40 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Pro-WEB02" />
-        <module name="Pro-WEB01" />
+        <module name="Pro0WEB08" />
+        <module name="Pro0WEB07" />
+        <module name="Pro0WEB06" />
+        <module name="Pro0WEB05" />
         <module name="Pro0WEB04" />
         <module name="Pro0WEB03" />
+        <module name="Pro-WEB02" />
+        <module name="Pro-WEB01" />
+        <module name="Pro0WEB10" />
+      </profile>
+      <profile name="Annotation profile for JAVA-WEB" enabled="true">
+        <sourceOutputDir name="../Pro0WEB10/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Pro0WEB10/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Pro0WEB09" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Pro0WEB03 (1)" target="1.5" />
+      <module name="Pro0WEB08" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Pro-WEB01" options="" />
+      <module name="Pro-WEB02" options="" />
+      <module name="Pro0WEB03" options="" />
+      <module name="Pro0WEB04" options="" />
+      <module name="Pro0WEB05" options="" />
+      <module name="Pro0WEB06" options="" />
+      <module name="Pro0WEB07" options="" />
+      <module name="Pro0WEB08" options="" />
+      <module name="Pro0WEB09" options="" />
+      <module name="Pro0WEB10" options="" />
+    </option>
   </component>
 </project>

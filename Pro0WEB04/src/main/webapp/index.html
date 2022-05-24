@@ -29,6 +29,12 @@
 						<td><img src="imgs/del.jpg" class="delImg" th:onclick="|delFruit(${fruit.getFid()})|"/></td>
 					</tr>
 				</table>
+				<div style="width: 60%; margin-left: 20%; border: 0px solid red;padding-top: 4px" class="center">
+					<input type="button" value="first page" class="btn" th:onclick="page(1)" th:disabled="${session.pageNo == 1}">
+					<input type="button" value="previous page" class="btn" th:onclick="|page(${session.pageNo-1})|" th:disabled="${session.pageNo == 1}">
+					<input type="button" value="next page" class="btn" th:onclick="|page(${session.pageNo+1})|" th:disabled="${session.pageNo == session.pageCount}">
+					<input type="button" value="last page" class="btn" th:onclick="|page(${session.pageCount})|" th:disabled="${session.pageNo == session.pageCount}">
+				</div>
 			</div>
 		</div>
 	</body>
