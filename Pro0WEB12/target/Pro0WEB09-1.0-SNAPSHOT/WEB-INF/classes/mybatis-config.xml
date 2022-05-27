@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 引入properties文件 -->
+    <properties resource="jdbc.properties"/>
+    <!-- 设置类型别名 不区分大小写
+    如果没设置alias 拥有默认的别名就是他的类名，不区分大小写
+    -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="True"/>
+    </settings>
+    <typeAliases>
+        <!--        <typeAlias type="sdu.cs.mybatis.pojo.User" alias="User"></typeAlias>-->
+        <!-- 使用更多的是一下方式 该包下面的所有类设置别名，且不区分大小写-->
+        <package name="sdu.cs.bean"/>
+    </typeAliases>
+
+    <!-- 配置连接数据库的环境 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- ${这里是properties中的key} -->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 引入印射文件 -->
+    <mappers>
+        <package name="sdu/cs/mapper"/>
+    </mappers>
+</configuration>

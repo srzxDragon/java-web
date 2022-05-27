@@ -1,10 +1,8 @@
 package sdu.cs.controllers;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+
+import sdu.cs.io.BeanFactory;
+import sdu.cs.io.ClassPathXmlApplicationContext;
 
 
 import javax.servlet.ServletException;
@@ -12,23 +10,21 @@ import javax.servlet.annotation.WebServlet;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+
 import java.io.IOException;
-import java.io.InputStream;
+
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.util.HashMap;
-import java.util.Map;
+
 
 
 @WebServlet("*.do") // 拦截所有以.do结尾的请求
 public class DispatcherServlet extends ViewBaseServlet {
 
-    private Map<String, Object> beanMap = new HashMap<>();
+    private BeanFactory beanFactory;
+
 
     public DispatcherServlet() {
 
@@ -36,47 +32,8 @@ public class DispatcherServlet extends ViewBaseServlet {
 
     public void init() throws ServletException {
         super.init();
-        try {
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("applicationContext.xml");
-            // 创建DocumentBuilderFactory对象
-            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-            // 创建DocumentBuilder对象
-            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-            // 创建Document对象
-            Document document = documentBuilder.parse(inputStream);
-            // 获取所有的bean节点
-            NodeList beanNodeList = document.getElementsByTagName("bean");
-            for(int i = 0; i < beanNodeList.getLength(); i++) {
-                Node beanNode = beanNodeList.item(i);
+        beanFactory = new ClassPathXmlApplicationContext();
 
-                if (beanNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element beanElement = (Element) beanNode;
-
-                    String beanId = beanElement.getAttribute("id");
-                    String className = beanElement.getAttribute("class");
-
-                    Class controllerBeanClass = Class.forName(className);
-
-                    Object beanObj = controllerBeanClass.newInstance();
-
-
-                    beanMap.put(beanId, beanObj);
-                }
-            }
-
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        }
 
     }
 
@@ -99,7 +56,9 @@ public class DispatcherServlet extends ViewBaseServlet {
         servletPath = servletPath.substring(0, lastIndex);
 
 
-        Object controllerBeanObj = beanMap.get(servletPath);
+
+
+        Object controllerBeanObj = beanFactory.getBean(servletPath);
 
 
         String operate = request.getParameter("operate");

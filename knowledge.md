@@ -186,6 +186,80 @@ req.setCharacterEncoding("UTF-8");
     * 访问方式为post
 - response.sendRedirect("index");
     * 客户端重定向，让浏览器访问注册为index的servlet
+    
+    
+## Servlet的初始化方法
+    * 有两个init(), init(config)
+    1. 带参数
+    public void init(ServletConfig config) {
+        this.config = config;
+        init();
+    }
+    2. 不带参数
+    public voit init() {}
+    - 如果想在初始化的时候做一些准备工作，可以重写的init()方法
+    - 可以通过一下步骤获取初始设置的数据
+    ```java
+    ServletConfig servletConfig = getServletConfig();
+    String initValue = servletConfig.getInitParameter("hello");
+    ```
+    3. 在web.xml中配置servlet
+    4. 也可以通过注解的方式进行配置
+
+## ServletContext和<context-param>
+    1. 获取ServletContext
+        - 在初始化方法中：
+            ServletContext servletContext = getServletContext();
+            String contextConfigLocation = servletContext.getInitParameter("contextConfigLocation");
+        - 在服务方法中也可以通过request对象获取
+            req.getServletContext();
+            req.getSession().getServletContext();
+    2. 获取初始化值
+        servletContext.getInitParameter();
+
+
+## 业务层
+    1. MVC: 
+        Molde(模型), View(视图), Controller(控制器)
+        视图层主要用于做数据展示和用户交互的界面
+        控制器能够接受客户端的请求，具体业务功能还是需要借助于模型来完成
+        模型层分很多种，有很简单的POJO/VO,有业务模型组件，有业务模型组件，有数据访问层组件
+            1. POJO: 值对象
+            2. DAO: 数据访问对象
+            3. BO: 业务对象
+        - 区分DAO和BO
+            1. DAO的方法都是单精度方法，一个方法只考虑一个操作，比如添加就是insert操作
+            2. BO中的方法属于业务方法，而实际的业务是比较复杂的，因此业务方法的粒度是比较粗的
+                * 例如注册这个功能属于业务功能，属于业务方法
+                * 这个业务方法中包含了多个DAO方法，注册这个功能需要通过多个DAO方法的调用组合，从而完成功能的开发
+        - 在库存系统中添加业务层
+      
+      
+## IOC
+    1. 耦合/依赖
+        某某某离不开某某某
+        在软件系统中层与层之间是存在依赖的
+        在系统架构或者是设计的一个原则是: 高内聚低耦合
+    2. 控制反转IOC
+    3. 依赖注入DI
+
+## 过滤器 Filter
+    1. 也属于Servlet规范
+    2. 开发步骤: 新建Filter接口，实现其中的init(), deFilter()和destroy()方法，配置Filter可以用注解和.XML文件
+    3. Filter在配置时也可以使用通配符@WebFilter("*.do");拦截所有以.do结尾的请求
+    4. 过滤器链
+        @WebFilter()注解方式，过滤器拦截顺序时按照全类名的先后顺序排序的
+        .xml配置方式，配置的先后顺序进行排序
+ 
+ 
+## 事务管理
+    * 一个业务可能要有多个DAO方法
+    * 如果某些方法执行成功，而某些方法执行失败，则这个要业务应该时执行失败的状态
+    * 事务管理不能以DAO层的单精度方法为单位
+    * 而应该以业务层的方法为单位
+
+                
+    
 
 
 ## 错误

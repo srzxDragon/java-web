@@ -1,17 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Pro0WEB08:war exploded">
-    <output-path>$PROJECT_DIR$/Pro0WEB08/target/Pro0WEB08-1.0-SNAPSHOT</output-path>
-    <properties id="maven-jee-properties">
-      <options>
-        <exploded>true</exploded>
-        <module>Pro0WEB08</module>
-        <packaging>war</packaging>
-      </options>
-    </properties>
+  <artifact type="exploded-war" name="Pro-WEB-13:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pro_WEB_13_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Pro0WEB08" />
+          <element id="module-output" name="Pro-WEB-13" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.12.RELEASE" />
@@ -26,10 +19,7 @@
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
         </element>
       </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Pro0WEB08/target/Pro0WEB08-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      </element>
-      <element id="javaee-facet-resources" facet="Pro0WEB08/web/Web" />
+      <element id="javaee-facet-resources" facet="Pro-WEB-13/web/Web" />
     </root>
   </artifact>
 </component>
